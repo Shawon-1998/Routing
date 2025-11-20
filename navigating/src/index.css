@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm:576px ;
+  --breakpoint-md:768px ;
+  --breakpoint-lg:992px ;
+  --breakpoint-xl:1170px ;
+  --font-mine :"Stack Sans Notch", sans-serif;
+}
+ @layer utilities{
+  .container{
+    margin: auto;
+    padding: 0px 20px;
+  }
+}
