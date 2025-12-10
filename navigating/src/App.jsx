@@ -5,13 +5,14 @@ import './App.css'
 import NavBar from './components/NavBar'
 import Banner from './components/Banner'
 import Footer from './components/Footer'
+import Todo from './components/Todo'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-   
+   <Todo/>
     <Banner/>
   
     </>

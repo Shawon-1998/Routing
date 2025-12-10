@@ -6,6 +6,11 @@ import About from'./pages/About.jsx'
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import RootLayOut from './RootLayOut.jsx'
+import { Provider } from 'react-redux'
+import { store } from './Store/Stoe.js'
+import { ToastContainer, toast } from 'react-toastify';
+import firebaseConfig from './FirebaseConfig.js'
+
 
 const router = createBrowserRouter([
   {
@@ -24,6 +29,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <RouterProvider router={router} />,
+   <Provider store={store}>
+     <ToastContainer />
+      <RouterProvider router={router} />,
+    </Provider>,
   </StrictMode>,
 )

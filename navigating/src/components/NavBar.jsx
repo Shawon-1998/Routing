@@ -5,7 +5,8 @@ import { NavLink } from "react-router";
 const NavBar = () => {
   return (
     <>
-      <div className='top-0 absolute w-full'>
+      <div className='= w-full '>
+      {/* <div className='top-0 absolute w-full'> */}
         <nav className='container top-0 relative '>
           <div className='flex justify-between items-center py-3'>
             <div>
